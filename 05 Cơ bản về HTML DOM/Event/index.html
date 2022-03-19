@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <button onclick="logTime()">Click me</button>
+    <button onclick="logName('abc')">Log name demo</button>
+    <button class="demoBtn" onclick="demoThis(this)">Demo This</button>
+    <button onclick="addElement()">Add element</button>
+    <div id="demo"></div>
+    <button id="addElementBtn">click here to add element</button>
+    </div>
+    <script>
+        //function khong truyen tham so
+        function logTime(){
+            let now = new Date();
+            console.log(now);
+        }
+        //function truyen tham so
+        function logName(name){
+            console.log(name);
+        }
+        //function sd this, lay nguyen object
+        function demoThis(obj){
+            console.log(obj);
+            obj.style.color = 'red';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="index-content"></div>
+    <h1>Hello</h1>
+    <script>
+        //tim phan tu can thay doi
+        let indexContent = document.getElementById('index-content');
+        //tao ra phan tu voi create
+        let p = document.createElement('p');
+        //them noi dung cho the moi tao
+        p.innerText = "This is an added p tag";
+        //them the vao dom
+        indexContent.appendChild(p);
+        let h3 = document.createElement('h3');
+        h3.innerText='abc';
+        indexContent.appendChild(h3);
+    </script>
+</body>
+</html>
