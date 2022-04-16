@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // //BAI TAP 1
+        // // function calSum() {
+        // //     var a = parseInt(prompt("nhap so a"));
+        // //     var b = parseInt(prompt("nhap so b"));
+        // //     if (a < b) {
+        // //         alert("a nho hon b");
+        // //     } else {
+        // //         var sum = a + b;
+        // //     }
+        // //     document.write("Tổng hai số " + a + " + " + b + " là " + sum);
+        // // }
+        // // calSum();
+        // // BAI TAP 2
+        // const emtyString = "";
+        // let stars = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus8"];
+        // let starSign = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        // function findStar(starName) {
+        //     for (let i in stars) {
+        //         if (stars[i].toLowerCase() == starName.toLowerCase()){
+        //             return starSign[i];
+        //         }
+        //     }
+        //     return emtyString;
+        // }
+        // let starName = prompt("nhap vao ten ngoi sao");
+        // let foundStar = findStar(starName);
+        // if (foundStar != emtyString) {
+        //     document.write("chom sao cua " + starName + " la " + foundStar);
+        // }else{
+        //     document.write("khong tim thay chom sao tuong ung voi  " + starName)
+        // }
+        // //BAI TAP 3 tinh binh phuong
+        // // function calSquare() {
+        // //     var number = parseInt(prompt("nhap so bat ki"));
+        // //     return result = number*number;
+        // // }
+        // // document.write(" binh phuong cua " + number + " là " + result);
+        // // calSquare();
+        // // BAI TAP TIM SO NGUYEN DUONG
+        // function isPositiveInt(number){
+        //     return number % 1 == 0 && number > 0;
+        // }
+        // console.log(isPositiveInt(1));
+        // // BAI TAP TIM GIA TRI TRONG MANG
+        let inputNumArray = prompt("nhap vao 1 day so")
+        let numArr = inputNumArray.split("");
+        document.write(numArr + "<br/>");
+        function checkNum(c){
+            let count = 0;
+            for (let i = 0; i < numArr.length; i++) {
+                if (numArr[i] == c) {
+                    count++                   
+                }                
+            }
+            if (count !== 0){
+                document.write(c + "has" + count + " times in Array")
+            }else{
+                return -1;
+            }
+        }
+        let inputNum = parseInt(prompt("input a number:"));
+        let result = checkNum(inputNum);
+
+    </script>
+</body>
+
+</html>
