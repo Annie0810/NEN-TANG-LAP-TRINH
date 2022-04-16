@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div>
+    <input type="number" id="addText">
+    <button onclick="add()">Add</button>
+    <button onclick="display()">Display</button>
+    <span id="text"></span>
+</div>
+<body>
+    <script>
+        // let cities = [
+        //     ['Hanoi', 'HCM', 'Danang'],
+        //     ['Newyork', 'DC', 'Chicago']
+        // ];
+        // for (let row = 0; row < cities.length; row++) {
+        //     for (let col = 0; col < cities[row].length; col++) {
+        //         console.log(cities[row] [col]);
+        //     }
+        //     console.log('br');
+        // }
+        // let oddNum = [
+        //     [1, 3, 5, 7, 9],
+        //     [11, 13, 15, 17, 19]
+        // ];
+        // for (let row = 0; row< oddNum.length; row++) {
+        //     for (let col = 0; col < oddNum[row].length; col++) {
+        //         console.log(oddNum[row][col]);
+        //     }
+        // //     console.log('br');
+        // }
+    let numberArr = []
+    function add(){
+        let stg = document.getElementById('addText').value;
+        console.log(stg);
+        numberArr.push(stg)
+    }
+    function display(){
+        let result = document.getElementById('text');
+        let str = "";
+        for (let i = 0; i < numberArr.length; i++) {
+            str += '<p>Element '+i+ numberArr[i]+'</p>';
+        }
+        result.innerHTML=str
+    }
+    </script>
+</body>
+
+</html>

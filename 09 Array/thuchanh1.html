@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let numArr = [-1, 2, 4, 5.5, 19];
+        // let max = numArr[0];
+        // for (let index = 1; index < numArr.length; index++) {
+        //     if (numArr[index]>max) {
+        //         max = numArr[index];
+        //     }
+        // }
+        // console.log(max)
+        // let array = [];
+        // quantity = 10;
+        // for (let i = 0; i < quantity; i++) {
+        //     array.push([]);
+        //     for (let j = 0; j < quantity; j++) {
+        //         element = parseInt(Math.random()*99+1);
+        //         array[i].push(element);                
+        //     }
+        // }
+        // console.log(array)
+        // var min = max =array[0][0];
+        // for (let i = 0; i < quantity; i++) {
+        //     for (let j = 1; j < quantity; j++) {
+        //         if (min > array [i] [j]) {
+        //             min = array[i][j]
+        //         }
+        //         if (min < array [i] [j]) {
+        //             min = array[i][j]
+        //         }
+                
+        //     }
+            
+        // }
+        // console.log('min: ' + min)
+        // console.log('max: ' + max)
+        let array = [1, 2, 3, 4, 5];
+        let reverseOne = [];
+        for (let i = array.length - 1; i >=0; i--) {
+            reverseOne.push(array[i]);            
+        }
+        console.log(reverseOne);
+        let reverseTwo = [];
+        for (let i = 0; i < array.length; i++) {
+            reverseTwo.unshift(array[i]);
+        }
+        console.log(reverseTwo)
+    </script>
+
+
+</body>
+
+</html>
