@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Person {
+            constructor(name, birthday, gender, email, tel, address) {
+                this.name = name;
+                this.birthday = birthday;
+                this.gender = gender;
+                this.email = email;
+                this.tel = tel;
+                this.address = address;
+            }
+            getAge() {
+                let now = new Date();
+                return now.getFullYear() - this.birthday;
+            }
+            changeName(newName) {
+                this.name = newName;
+            }
+        }
+        let quan = new Person("quan", 2000, 'Female', 'quaan@gmail', '012345', 'so');
+        // console.log(quan.getAge());
+        // for (const key in quan) {
+        //     console.log(key + ";" + quan[key]);
+        // }
+        console.log(quan.name)
+        console.log(quan)
+        // quan.name = 'nam';
+    
+
+    </script>
+</body>
+
+</html>
