@@ -9,23 +9,21 @@
 <body>
     <script>
         class Circle {
-            constructor(radious, color){
-                this.radious = radious;
+            constructor(radius, color){
+                this.radius = radius;
                 this.color = color;
             }
-            getRadious(){
-                return this.radious;
-            }
-            getArea(){
-                return Math.pow(this.radious, 2)*Math.PI;
-            }
-            draw(elementID){
-                let canvas = document.getElementById(elementID);
-            }
+            getRadius(){
+            return this.radius;
         }
-        let circle = new Circle(10, "red");
-        console.log(circle.getRadious());
-        console.log(circle.getArea());
+        getArea(){
+            return Math.PI * this.radius * this.radius;
+        }
+        }
+        let circle = new Circle(5);
+        let radius = circle.getRadius();
+        let area = circle.getArea();
+       console.log("radius: " + radius + ";area: " + area);
     </script>
 </body>
 </html>
